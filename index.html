@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Conversor de moneda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Historial</h2>
+        <div id="container">
+            <h3 id="historial" class="vacio">Vacio</h3>
+        </div>
+        <div class="container-precio">
+            <p id="apiDolar">Precio Dolar: </p>
+            <p id="apiEuro">Precio Euro: </p>
+        </div>
+    </div>
+
+    <section class="form-contact">
+        <header>
+            <span>
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                <h1>Conversor de pesos argentinos a Dolar o Euro</h1>
+            </span>
+        </header>
+    
+        <form action="" class="contact" method="POST" id="contact">
+            <label for="nombres">Nombre</label>
+            <input type="text" name="nombres" id="nombres" required>
+    
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required>
+    
+            <label for="cantidad">Cantidad de pesos</label>
+            <input type="number" name="cantidad" id="cantidad" required>
+    
+            <p id="select">Cambiar a:
+                <select type="text" name="moneda" id="moneda" required>
+                    <option value="1" id="seleccionar">Seleccionar</option>
+                    <option value="dolar" id="dolar">Dolar</option>
+                    <option value="euro" id="euro">Euro</option>
+                </select>
+                <h1 id="resultado">Resultado $0.00</h1>
+            </p>
+            <input type="submit" value="Enviar" id="enviar">
+    
+    
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
